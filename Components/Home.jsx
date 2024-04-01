@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, FlatList, Switch, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
+import { View, Text, TextInput, FlatList, Switch, StyleSheet, TouchableOpacity, ImageBackground, Image } from 'react-native';
 import { surahNames } from './Quran';
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
             <Text style={styles.title}>Quran Explorer Siti Ayesha</Text>
             <View style={styles.header}>
                 <Image style={styles.img1} source={require('../assets/abc.jpg')} />
-                <Image style={styles.img2} source={require('../assets/cde.jpg')} />
+ 
             </View>
             <View style={styles.toggleContainer}>
                 <Text style={darkMode ? styles.iconDark : styles.icon}>☀︎</Text>
@@ -84,16 +84,16 @@ const styles = StyleSheet.create({
   },
 img1: {
       width: '100%',
-      height:20,
+      height:120,
       marginTop: 60,
       borderRadius: 7,
   },
   img2: {
       width: '100%',
-      height:20,
+      height:120,
       marginTop: 250,
       alignContent: 'center',
-      marginLeft: -500,
+      marginLeft: -400,
       borderRadius: 7,
   },
     darkMode: {
@@ -102,6 +102,7 @@ img1: {
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        marginTop:30,
         marginBottom: 20,
     },
     toggleContainer: {
